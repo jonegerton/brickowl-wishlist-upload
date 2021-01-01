@@ -4,6 +4,9 @@
 *.dll
 *.so
 *.dylib
+*.log
+brickowl-wishlist-upload
+brickowl-wishlist-*.json
 
 # Test binary, built with `go test -c`
 *.test
@@ -13,3 +16,8 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# Ignore files for local running
+missing-parts.json
+brickowl-wishlist-upload.sh
+.vscode
