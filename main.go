@@ -435,7 +435,7 @@ func postBO(pathAndArgs string, data url.Values, response interface{}) error {
 			}
 
 			if err = json.Unmarshal(body, &errorResponse); err == nil {
-				return fmt.Errorf("Error from request '%v': %v", url, errorResponse.Error.Status)
+				return fmt.Errorf("Error from request '%v', '%v': %v", url, data, errorResponse.Error.Status)
 			}
 		}
 		//Otherwise return the status code
